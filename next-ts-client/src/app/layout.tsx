@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col items-center p-8 gap-y-6">
         <nav className="flex gap-x-4">
           <Link href="/">Home</Link>
-          <Link href="/notes">Notes</Link>
+          <Link href="/newtodo">New Todo</Link>
         </nav>
         {children}
       </body>

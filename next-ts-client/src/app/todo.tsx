@@ -4,10 +4,11 @@ export interface Todo_t {
   id: number;
   title: string;
   status: TodoStatus;
-  dueDate: Date;
+  dueDate: string;
 }
 
 export default function Todo({ todo }: { todo: Todo_t }) {
+  console.log("TODO: ", todo)
   return (
     <div className="border-solid border-1 px-4 py-2 rounded-lg">
       <h2 className="">
@@ -17,7 +18,7 @@ export default function Todo({ todo }: { todo: Todo_t }) {
         {todo.status}
       </div>
       <div>
-        {todo.dueDate.toString()}
+        {todo.dueDate}
       </div>
     </div>
   )
